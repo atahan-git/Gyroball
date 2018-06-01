@@ -27,9 +27,10 @@ function Start () {
 
 function Update () {
 
-	if(curPickup == null) SpawnOne();
-	else if(theBall.position.y + renderDis < curPickup.transform.position.y) SpawnOne();
-
+	if(theBall != null){
+		if(curPickup == null) SpawnOne();
+		else if(theBall.position.y + renderDis < curPickup.transform.position.y) SpawnOne();
+	}
 }
 
 function SpawnOne (){

@@ -20,8 +20,12 @@ var endReverse : Text;
 var endScreen : Text;
 var money : Text;
 
+var isInvul = false;
+static var s : DeathCont;
+
 function Start () {
 
+	s = this;
 
 	gameMode = PlayerPrefs.GetInt("GameMode", 0);
 	
