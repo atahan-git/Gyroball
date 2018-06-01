@@ -20,7 +20,7 @@ public class CloudController : MonoBehaviour {
 	}
 
 
-	float leastHeight = 0;
+	float leastHeight = 20;
 	// Update is called once per frame
 	void Update () {
 
